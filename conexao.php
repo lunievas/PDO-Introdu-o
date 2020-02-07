@@ -5,14 +5,11 @@ $username = "root";
 $password = "";
 
 
-try{
-    $conexaoDb = new PDO($dsn,$username,$password);
-
-}catch(PDOException $e){
-    echo"<h1>Nessa máquina não funciona! </h1><br>" . $e -> getMessage();
-
+try {
+    $conexaoDb = new PDO($dsn, $username, $password);
+} catch (PDOException $e) {
+    echo "<h1>Nessa máquina não funciona! </h1><br>" . $e->getMessage();
 }
 
-
-
 ?>
+
